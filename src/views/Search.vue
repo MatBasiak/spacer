@@ -67,7 +67,7 @@ export default {
   }
 
   input {
-    height: 50px;
+    height: 60px;
     border: 0;
     border-bottom: 1px solid black;
   }
