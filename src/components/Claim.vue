@@ -1,26 +1,36 @@
 <template>
-  <div class="wrapper">
-    <h1 class="'claim">Spacer</h1>
+  <div class="claimWrapper">
+    <h1 class="claim">Spacer</h1>
     <p class="subclaim">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     </p>
     <p class="subclaim">
-      type anything spacer ralated to start
+      Type anything space ralated to start
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'claim',
+  name: 'Claim',
 };
 </script>
 
 <style lang="scss" scoped>
-  .wrapper{
+  .claimWrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+  .claim{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .subclaim{
+    margin: 25px 0 0 0;
+    font-size: 15px;
   }
 </style>
