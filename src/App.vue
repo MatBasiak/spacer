@@ -10,7 +10,8 @@
       <Claim v-if="step===0"/>
       <SearchInput v-model="searchValue" @input="handleInput" :dark="step===1"/>
       <div class="results" v-if="results && !loading && step===1">
-          <Item v-for="item in results" :item="item" :key="item.data[0].nasa_id" @click.native="handleModalOpen(item)"/>
+          <Item v-for="item in results" :item="item" :key="item.data[0].nasa_id"
+                @click.native="handleModalOpen(item)"/>
       </div>
     </div>
     <div class="loader" v-if="step === 1 && loading"></div>
